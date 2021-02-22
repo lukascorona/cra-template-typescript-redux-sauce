@@ -1,21 +1,60 @@
 {
-  "name": "cra-template-typescript-redux-sauce",
+  "name": "typescript-redux-sauce",
   "version": "0.1.0",
+  "license": "MIT",
+  "author": "Lukas Corona <luk.corona+dev@gmail.com>",
+  "main": "template.json",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "react-redux",
+    "react-sagas",
+    "redux-persist",
+    "reduxsauce",
+    "react-router",
+    "react-router-dom",
+    "typescript"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ],
   "private": true,
   "dependencies": {
+    "@fontsource/roboto": "^4.2.0",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/seamless-immutable": "^7.1.15",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
+    "redux-persist": "^6.0.0",
+    "redux-persist-seamless-immutable": "^2.0.0",
+    "redux-saga": "^1.1.3",
+    "reduxsauce": "^1.2.0",
+    "seamless-immutable": "^7.1.4",
+    "typescript": "^4.1.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/tsconfig.json ./template/.env ./template/decs.d.ts",
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .env decs.d.ts tsconfig.json template/",
+    "prepublishOnly": "yarn clean-files && yarn copy-files"
   },
   "eslintConfig": {
     "extends": [
