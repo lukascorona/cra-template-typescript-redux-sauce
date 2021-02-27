@@ -19,9 +19,9 @@ yarn create react-app your-project-name --template typescript-redux-sauce
 
 ## Motivation
 Having created several projects from scratch, I've noticed that before a new project can really get started, it always requires the same repetitive work:
-- first I have to create a basic folder structure
-- then I add a basic navigation
-- for the actual state management I use Redux, where the writing of the boilerplate takes a lot of time
+- First I have to create a basic folder structure
+- Then I add a basic navigation
+- For the actual state management I use Redux, where the writing of the boilerplate takes a lot of time
 - Furthermore the state should be persistent, so Redux-Persist has to be configured
 - Finally, for better clarity, I want to separate side effects (like loading data from the server) from the actual logic using Redux-Sagas
 
