@@ -1,6 +1,6 @@
 {
   "name": "cra-template-typescript-redux-sauce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Lukas Corona <luk.corona+dev@gmail.com>",
   "main": "template.json",
