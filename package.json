@@ -1,9 +1,14 @@
 {
-  "name": "typescript-redux-sauce",
-  "version": "0.1.0",
+  "name": "cra-template-typescript-redux-sauce",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Lukas Corona <luk.corona+dev@gmail.com>",
   "main": "template.json",
+  "homepage": "https://github.com/lukascorona/cra-template-typescript-redux-sauce",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukascorona/cra-template-typescript-redux-sauce"
+  },
   "keywords": [
     "react",
     "create-react-app",
@@ -21,7 +26,6 @@
     "template",
     "template.json"
   ],
-  "private": true,
   "dependencies": {
     "@fontsource/roboto": "^4.2.0",
     "@material-ui/core": "^4.11.3",
@@ -44,7 +48,7 @@
     "redux-saga": "^1.1.3",
     "reduxsauce": "^1.2.0",
     "seamless-immutable": "^7.1.4",
-    "typescript": "^4.1.3",
+    "typescript": "4.1.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -53,8 +57,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/tsconfig.json ./template/.env ./template/decs.d.ts",
-    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .env decs.d.ts tsconfig.json template/",
-    "prepublishOnly": "yarn clean-files && yarn copy-files"
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .env decs.d.ts tsconfig.json template/"
   },
   "eslintConfig": {
     "extends": [
